@@ -1,0 +1,32 @@
+body {
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #D2E9E9;
+    color: #ACBCFF;
+}
+
+.row_header {
+    font-size: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    background-color: #D2E9E9;
+    border: none;
+    border-bottom: 1px solid #C4DFDF;
+    outline: none;
+}
+
+button {
+    background-color: #E3F4F4;
+    border: 2px #D2E9E9;
+    color: #ACBCFF;
+}
+
+.row {
+    justify-content: flex-end;
+}

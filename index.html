@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div class="container">
+        <form action="">
+            <div class="row_header">
+                <h2>Dang Nhap</h2>
+            </div>
+            <div class="row row_name">
+                <label for="">Ten: </label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="row row_age">
+                <label for="">Tuoi: </label>
+                <input type="number" id="age" required>
+            </div>
+            <div class="row row_email">
+                <label for="">Email: </label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="row">
+                <button id="send" type="button" onclick="submitData()">Luu Du Lieu</button>
+                <button id="delete" type="reset" >Nhap Lai</button>
+            </div>
+        </form>
+        <div class="row link_to_show">
+            <a href="show.html" target="_blank">Bang Data</a>
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>

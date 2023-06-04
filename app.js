@@ -1,42 +1,24 @@
-//bai 1
+    function submitData() {
+        var nameTag = document.getElementById("name")
+        localStorage.setItem("name", nameTag.value)
 
-const x = parseInt(prompt("Nhap so duong"))
-if (x < 0) {
-    alert("So nay am")
-}
+        var ageTag = document.getElementById("age")
+        localStorage.setItem("age", ageTag.value)
 
-else if (x == 0) {
-    alert("Giai thua cua 0 la 1")
-}
+        var emailTag = document.getElementById("email")
+        localStorage.setItem("email", emailTag.value)
 
-else {
-    let y = 1
-    for (i = 1; i<= x; i++) {
-        y *= i
     }
-    alert("Giai thua cua" + " " + x + " " + "la" + " " + y)
-}
+    
+    function showData() {
+        name = localStorage.getItem("name")
+        age = localStorage.getItem("age")
+        email = localStorage.getItem("email")
 
-
-//bai 2
-function tamgiac(height) {
-    for (let i = 0; i < height; i++) {
-      let row = "";
-  
-      for (let j = 0; j < height - i - 1; j++) {
-        row += " ";
-      }
-
-      for (let j = 0; j < 2 * i + 1; j++) {
-        if (i === 0 || i === height - 1 || j === 0 || j === 2 * i) {
-          row += "*";
-        } else {
-          row += " ";
-        }
-      }
-  
-      console.log(row);
+        document.getElementById("data").innerHTML += 
+        `
+        <tr>${name}</td>
+        <tr>${age}</td>
+        <tr>${email}</td>
+        `
     }
-  }
-  
-  tamgiac(5);
